@@ -99,17 +99,27 @@ int cmp(int a, int b)
 int main()
 {
 
-    //ll t;
-    //cin >> t;
+    ll t;
+    cin >> t;
     //ll ans=0;
-    ll n=4,a[n];
-    for(ll i=0;i<n;i++)
+    while(t--)
     {
-        cin >> a[i];
-    }
-    sort(a, a+4);
-    cout << a[3]-a[2] << " " << a[3]-a[1] << " " << a[3]-a[0] << endl;
-    }
+        ll a,b,c,d,k;
+        cin >> a >> b >> c >> d >> k;
+        ll x = (a+c-1)/c, y=(b+d-1)/d;
+        if(x+y>k)
+        {
+            cout << -1 << endl;
+        }
+        else
+        {
+            cout << x << " " << y << endl;
+        }
 
 
+
+
+    }
+
+}
 
